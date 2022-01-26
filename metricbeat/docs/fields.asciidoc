@@ -26454,6 +26454,255 @@ type: keyword
 
 --
 
+[float]
+=== snapshot
+
+Fields about Elasticsearch snapshot policies  
+
+
+
+*`elasticsearch.snapshot.modified_date_millis`*::
++
+--
+Last modification date
+
+
+type: long
+
+--
+
+[float]
+=== policy
+
+Details about snapshot policy
+
+
+
+*`elasticsearch.snapshot.policy.repository`*::
++
+--
+The name of the repository
+
+
+type: keyword
+
+--
+
+[float]
+=== config
+
+Policy configuration 
+
+
+
+*`elasticsearch.snapshot.policy.config.indices`*::
++
+--
+The list of indices part of the policy
+
+
+type: keyword
+
+--
+
+[float]
+=== retention
+
+Retention settings
+
+
+
+*`elasticsearch.snapshot.policy.retention.expire_after`*::
++
+--
+Expiration of policy
+
+
+type: keyword
+
+--
+
+*`elasticsearch.snapshot.policy.retention.min_count`*::
++
+--
+The minimum number of policies to be created
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.policy.retention.max_count`*::
++
+--
+The maximum number of policies to be created
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.policy.name`*::
++
+--
+The name of this policy
+
+
+type: keyword
+
+--
+
+*`elasticsearch.snapshot.policy.schedule`*::
++
+--
+The schedule of this policy
+
+
+type: keyword
+
+--
+
+[float]
+=== last_success
+
+Details about last successful snapshot
+
+
+
+*`elasticsearch.snapshot.last_success.snapshot_name`*::
++
+--
+The name of this snapshot
+
+
+type: keyword
+
+--
+
+*`elasticsearch.snapshot.last_success.time`*::
++
+--
+Snapshot creation date
+
+
+type: long
+
+--
+
+[float]
+=== last_failure
+
+Details about last snapshot failure 
+
+
+
+*`elasticsearch.snapshot.last_failure.snapshot_name`*::
++
+--
+The name of the snapshot
+
+
+type: keyword
+
+--
+
+*`elasticsearch.snapshot.last_failure.time`*::
++
+--
+Last failure date
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.next_execution_millis`*::
++
+--
+Next execution time in milliseconds
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.name`*::
++
+--
+The name of this snapshot policy
+
+
+type: keyword
+
+--
+
+[float]
+=== stats
+
+Snapshot policy statistics
+
+
+
+*`elasticsearch.snapshot.stats.snapshots_deleted`*::
++
+--
+Number of snapshots deleted
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.stats.snapshot_deletion_failures`*::
++
+--
+Number of snapshot deletion failures
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.stats.policy`*::
++
+--
+The name of this snapshot policy
+
+
+type: keyword
+
+--
+
+*`elasticsearch.snapshot.stats.snapshots_taken`*::
++
+--
+Number of snapshots created
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.stats.snapshots_failed`*::
++
+--
+Number of snapshot failures
+
+
+type: long
+
+--
+
+*`elasticsearch.snapshot.version`*::
++
+--
+Snapshot policy version        
+
+
+type: long
+
+--
+
 [[exported-fields-envoyproxy]]
 == Envoyproxy fields
 

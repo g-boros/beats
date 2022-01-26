@@ -1,0 +1,117 @@
+- name: snapshot
+  type: group
+  description: >
+    Fields about Elasticsearch snapshot policies  
+  release: ga
+  fields:
+    - name: modified_date_millis
+      type: long
+      description: >
+        Last modification date
+    - name: policy
+      type: group
+      description: >
+        Details about snapshot policy
+      fields:
+        - name: repository
+          type: keyword
+          description: >
+            The name of the repository
+        - name: config
+          type: group
+          description: >
+            Policy configuration 
+          fields:
+            - name: indices
+              type: keyword
+              description: >
+                The list of indices part of the policy
+        - name: retention
+          type: group
+          description: >
+            Retention settings
+          fields:
+            - name: expire_after
+              type: keyword
+              description: >
+                Expiration of policy
+            - name: min_count
+              type: long
+              description: >
+                The minimum number of policies to be created
+            - name: max_count
+              type: long
+              description: >
+                The maximum number of policies to be created
+        - name: name
+          type: keyword
+          description: >
+            The name of this policy
+        - name: schedule
+          type: keyword
+          description: >
+            The schedule of this policy
+    - name: last_success
+      type: group
+      description: >
+        Details about last successful snapshot
+      fields:
+        - name: snapshot_name
+          type: keyword
+          description: >
+            The name of this snapshot
+        - name: time
+          type: long
+          description: >
+            Snapshot creation date
+    - name: last_failure
+      type: group
+      description: >
+        Details about last snapshot failure 
+      fields:
+        - name: snapshot_name
+          type: keyword
+          description: >
+            The name of the snapshot
+        - name: time
+          type: long
+          description: >
+            Last failure date
+    - name: next_execution_millis
+      type: long
+      description: >
+        Next execution time in milliseconds
+    - name: name
+      type: keyword
+      description: >
+        The name of this snapshot policy
+    - name: stats
+      type: group
+      description: >
+        Snapshot policy statistics
+      fields:
+        - name: snapshots_deleted
+          type: long
+          description: >
+            Number of snapshots deleted
+        - name: snapshot_deletion_failures
+          type: long
+          description: >
+            Number of snapshot deletion failures
+        - name: policy
+          type: keyword
+          description: >
+            The name of this snapshot policy
+        - name: snapshots_taken
+          type: long
+          description: >
+            Number of snapshots created
+        - name: snapshots_failed
+          type: long
+          description: >
+            Number of snapshot failures
+    - name: version
+      type: long
+      description: >
+        Snapshot policy version        
+

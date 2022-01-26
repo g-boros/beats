@@ -1,0 +1,96 @@
+{
+    "es-test-snapshots3": {
+        "version": 1,
+        "modified_date_millis": 1643052910023,
+        "policy": {
+            "name": "ad-hoc3",
+            "schedule": "1 1 1 * * ?",
+            "repository": "es-test-snapshots",
+            "config": {
+                "indices": [
+                    "es-metrics-*"
+                ]
+            },
+            "retention": {
+                "expire_after": "1d",
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "next_execution_millis": 1643072461000,
+        "stats": {
+            "policy": "es-test-snapshots3",
+            "snapshots_taken": 0,
+            "snapshots_failed": 0,
+            "snapshots_deleted": 0,
+            "snapshot_deletion_failures": 0
+        }
+    },
+    "es-test-snapshots": {
+        "version": 1,
+        "modified_date_millis": 1642508488091,
+        "policy": {
+            "name": "ad-hoc",
+            "schedule": "13 13 * * * ?",
+            "repository": "es-test-snapshots",
+            "config": {
+                "indices": [
+                    "test_data"
+                ]
+            },
+            "retention": {
+                "expire_after": "10d",
+                "min_count": 1,
+                "max_count": 5
+            }
+        },
+        "last_success": {
+            "snapshot_name": "ad-hoc-bwptbtb8sf6rax_haylqza",
+            "time": 1643044450069
+        },
+        "last_failure": {
+            "snapshot_name": "ad-hoc-mrqgwzqxtrecwn-hd-6z-g",
+            "time": 1642807719309,
+            "details": "{\"type\":\"snapshot_exception\",\"reason\":\"[es-test-snapshots:ad-hoc-mrqgwzqxtrecwn-hd-6z-g/lxqQvOZ0RymrZwbn5bmgsA] no longer master\",\"stack_trace\":\"SnapshotException[[es-test-snapshots:ad-hoc-mrqgwzqxtrecwn-hd-6z-g/lxqQvOZ0RymrZwbn5bmgsA] no longer master]\\n\\tat org.elasticsearch.snapshots.SnapshotsService.applyClusterState(SnapshotsService.java:1415)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService.callClusterStateAppliers(ClusterApplierService.java:499)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService.callClusterStateAppliers(ClusterApplierService.java:491)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService.applyChanges(ClusterApplierService.java:460)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService.runTask(ClusterApplierService.java:407)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService.access$000(ClusterApplierService.java:57)\\n\\tat org.elasticsearch.cluster.service.ClusterApplierService$UpdateTask.run(ClusterApplierService.java:151)\\n\\tat org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:673)\\n\\tat org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:241)\\n\\tat org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:204)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)\\n\\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)\\n\\tat java.base/java.lang.Thread.run(Thread.java:831)\\n\"}"
+        },
+        "next_execution_millis": 1643055193000,
+        "stats": {
+            "policy": "es-test-snapshots",
+            "snapshots_taken": 41,
+            "snapshots_failed": 3,
+            "snapshots_deleted": 35,
+            "snapshot_deletion_failures": 0
+        }
+    },
+    "es-test-snapshots2": {
+        "version": 1,
+        "modified_date_millis": 1642510129106,
+        "policy": {
+            "name": "ad-hoc2",
+            "schedule": "1 1 1 * * ?",
+            "repository": "es-test-snapshots",
+            "config": {
+                "indices": [
+                    "es-metrics-*"
+                ]
+            },
+            "retention": {
+                "expire_after": "1d",
+                "min_count": 1,
+                "max_count": 1
+            }
+        },
+        "last_success": {
+            "snapshot_name": "ad-hoc2-8o21ojg8tfy_8cd1vsckvw",
+            "time": 1643018435541
+        },
+        "next_execution_millis": 1643072461000,
+        "stats": {
+            "policy": "es-test-snapshots2",
+            "snapshots_taken": 3,
+            "snapshots_failed": 0,
+            "snapshots_deleted": 2,
+            "snapshot_deletion_failures": 0
+        }
+    }
+}

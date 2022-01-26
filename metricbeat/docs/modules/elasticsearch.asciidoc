@@ -97,6 +97,8 @@ The following metricsets are available:
 
 * <<metricbeat-metricset-elasticsearch-shard,shard>>
 
+* <<metricbeat-metricset-elasticsearch-snapshot,snapshot>>
+
 include::elasticsearch/ccr.asciidoc[]
 
 include::elasticsearch/cluster_stats.asciidoc[]
@@ -118,4 +120,6 @@ include::elasticsearch/node_stats.asciidoc[]
 include::elasticsearch/pending_tasks.asciidoc[]
 
 include::elasticsearch/shard.asciidoc[]
+
+include::elasticsearch/snapshot.asciidoc[]
 

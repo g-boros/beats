@@ -96,7 +96,7 @@ This file is generated! See scripts/mage/docs_collector.go
 |<<metricbeat-module-dropwizard,Dropwizard>>     |image:./images/icon-no.png[No prebuilt dashboards]    |  
 .1+| .1+|  |<<metricbeat-metricset-dropwizard-collector,collector>>   
 |<<metricbeat-module-elasticsearch,Elasticsearch>>     |image:./images/icon-no.png[No prebuilt dashboards]    |  
-.11+| .11+|  |<<metricbeat-metricset-elasticsearch-ccr,ccr>>   
+.12+| .12+|  |<<metricbeat-metricset-elasticsearch-ccr,ccr>>   
 |<<metricbeat-metricset-elasticsearch-cluster_stats,cluster_stats>>   
 |<<metricbeat-metricset-elasticsearch-enrich,enrich>>   
 |<<metricbeat-metricset-elasticsearch-index,index>>   
@@ -107,6 +107,7 @@ This file is generated! See scripts/mage/docs_collector.go
 |<<metricbeat-metricset-elasticsearch-node_stats,node_stats>>   
 |<<metricbeat-metricset-elasticsearch-pending_tasks,pending_tasks>>   
 |<<metricbeat-metricset-elasticsearch-shard,shard>>   
+|<<metricbeat-metricset-elasticsearch-snapshot,snapshot>>   
 |<<metricbeat-module-envoyproxy,Envoyproxy>>     |image:./images/icon-no.png[No prebuilt dashboards]    |  
 .1+| .1+|  |<<metricbeat-metricset-envoyproxy-server,server>>   
 |<<metricbeat-module-etcd,Etcd>>     |image:./images/icon-no.png[No prebuilt dashboards]    |  
